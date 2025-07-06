@@ -8,7 +8,8 @@ import seaborn as sns
 import plotly.figure_factory as ff
 import scipy
 
-df = pd.read_csv('athlete_events.csv')
+csv_url = "https://github.com/DenilTalaviya7074/olympic-analysis/releases/download/v1.0/athlete_events.csv"
+df = pd.read_csv(csv_url)
 region_df = pd.read_csv('noc_regions.csv')
 
 df = preprocessor.preprocess(df, region_df)
